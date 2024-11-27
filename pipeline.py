@@ -1,4 +1,4 @@
-from deepeye_pack import deepeye
+from .deepeye_pack import deepeye
 from shapelets.data import sandbox, ReadCSVOptions
 from shapelets.apps import DataApp
 from shapelets.native import DataType
@@ -36,7 +36,7 @@ dp.diversified_ranking()
 
 app = DataApp()
 for chart in dp.show_visualizations()._charts:
-    app.echart(spec=chart.dump_options())
+    app.echart(chart=chart.dump_options())
 
 
 
