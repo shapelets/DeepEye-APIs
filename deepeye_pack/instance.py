@@ -83,6 +83,8 @@ class Instance(object):
             None
             
         """
+        if self.view_num == 0:
+            return
         weight = [0 for i in range(self.column_num)]
         for table in self.tables:
             for view in table.views:

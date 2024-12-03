@@ -328,7 +328,7 @@ class deepeye(object):
             begin_id += 1
         if instance.view_num == 0:
             print ('no chart generated')
-            sys.exit(0)
+            #sys.exit(0)
         # print(instance.table_num, instance.view_num)
         return instance
 
